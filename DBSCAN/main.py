@@ -15,8 +15,8 @@ with open('DATA.txt', 'r') as file:
 X = np.array(data)
 
 # Реализация DBSCAN
-epsilon = 35.0  # размер эпсилон-окрестности
-min_samples = 4  # минимальное число объектов для полной эпсилон-окрестности
+epsilon = 30.0  # размер эпсилон-окрестности
+min_samples = 3  # минимальное число объектов для полной эпсилон-окрестности
 
 db = DBSCAN(eps=epsilon, min_samples=min_samples).fit(X)
 labels = db.labels_
